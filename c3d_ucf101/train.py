@@ -60,7 +60,7 @@
       def __init__(self, root_dir, split="train"):
           self.samples = []
           split_dir = os.path.join(root_dir, split)
-          classes = sorted(os.listdir(split_dir))[:5]
+          classes = sorted(os.listdir(split_dir))[:20]
           self.class_to_idx = {c: i for i, c in enumerate(classes)}
           for cls in classes:
               cls_dir = os.path.join(split_dir, cls)
